@@ -1,5 +1,5 @@
 import com.verint.hello.HelloWorld;
-import org.junit.jupiter.api.Test;
+import org.junit.*;
 
 public class HelloWorldTest {
     @Test
@@ -7,7 +7,7 @@ public class HelloWorldTest {
         HelloWorld h = new HelloWorld();
         String retval = new String();
         retval = h.sayHello();
-        assert retval != "Hello, World!";
+        assert retval == "Hello World!";
     }
 }
 
